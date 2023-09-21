@@ -27,10 +27,4 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
-    # Admin Dashboard
-    Route::group(['middleware' => ['permission:view admin dashboard']], function () {
-
-    });
-
-
 });
